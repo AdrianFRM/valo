@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Valorant</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/tabicon.png">
+
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="navbar">
+
+      <a href="./agents.html">AGENTS</a>
+      <a></a>
+      <div class="dropdown">
+        <button class="dropbtn">Maps</button>
+        <div class="dropdown-content">
+          <a href="./bind.html">Bind</a>
+          <a href="./haven.html">Haven</a>
+          <a href="./split.html">Split</a>
+        </div>
+      </div>
+      <a></a>
+      <a href="./index.html" class="titlu">VALORANT</a>
+      <a href="./weapons.html">WEAPONS</a>
+      <a href="./social.html">SOCIALS</a>
+      <button  id="pop-up-btn" class="play">PLAY NOW</button>
+
+    </div>
+    <div class="content" style="height: 100%;">
+      <div class="slider-img">
+        <div class="text">
+          <button id="raze-button" onclick="showImage(this)">RAZE</button>
+          <button id="fade-button" onclick="showImage(this)">FADE</button>
+          <button id="omen-button" onclick="showImage(this)">OMEN</button>
+          <button id="chamber-button" onclick="showImage(this)">CHAMBER</button>
+        </div>
+
+        <div class="img">
+          <img id="raze-img" src="./img/raze.png" class="image">
+          <img id="fade-img" src="./img/fade.png" class="image">
+          <img id="omen-img" src="./img/omen.png" class="image">
+          <img id="chamber-img" src="./img/chamber.png" class="image">
+        </div>
+
+      </div>
+      <div class="character">
+        <div id="raze-char" class="raze-char">
+          <h1>RAZE</h1>
+          <h2><img src="./img/duelist.png" width="50px">DUELIST</h2>
+          <div class="abilities">
+            <button onclick="change_video_raze('Q')" id="button-Q"><img src="./img/raze/Boom_Bot.png"
+                width="75%"></button>
+            <button onclick="change_video_raze('E')" id="button-E"><img src="./img/raze/Blast_Pack.png"
+                width="75%"></button>
+            <button onclick="change_video_raze('C')" id="button-C"><img src="./img/raze/Paint_Shells.png"
+                width="75%"></button>
+            <button onclick="change_video_raze('X')" id="button-X"><img src="./img/raze/Showstopper.png"
+                width="75%"></button>
+          </div>
+
+          <div class="vid-container"
+            style="position: relative; display: flex; justify-content: center; align-items: center;">
+            <div id="Q" class="hidden">
+              <div class="skill-info">
+                <h2>Q - BLAST PACK</h2>
+                <p>
+                  Va uitati la cu foc
+                  Dar nu stiti ce ascunde
+                  Pozele de pe facebook
+                  De mine sunt facute.
+                  Auu , sa moara maicuta mea
+                  Daca nu-i altceva
+                  Ea cu mine de mana
+                  A spart Romania.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" autoplay loop>
+                <source src="/img/raze/Raze_Q_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div id="E" class="hidden">
+              <div class="skill-info">
+                <h2>E - PAINT SHELLS</h2>
+                <p>
+                  EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each
+                  doing damage to anyone in their range.
+              </div>
+              <video width="650" height="325" style="position: absolute;" autoplay loop>
+                <source src="/img/raze/Raze_E_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div id="C" class="hidden">
+              <div class="skill-info">
+                <h2>C - BOOM BOT</h2>
+                <p>
+                  EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground,
+                  bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them,
+                  exploding for heavy damage if it reaches them. </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" autoplay loop>
+                <source src="/img/raze/Raze_C_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="X" class="hidden">
+              <div class="skill-info">
+                <h2>X - SHOWSTOPPER</h2>
+                <p>
+                  EQUIP a rocket launcher. FIRE shoots a rocket that does massive area damage on contact with anything.
+              </div>
+              <video width="650" height="325" style="position: absolute;" autoplay loop>
+                <source src="/img/raze/Raze_X_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div id="fade-char" class="fade-char">
+          <h1>FADE</h1>
+          <h2><img src="./img/initiator.png" width="50px">INITIATOR</h2>
+          <div class="abilities">
+            <button onclick="change_video_fade('Q')" id="button-Q"><img src="./img/fade/Seize.png" width="75%"></button>
+            <button onclick="change_video_fade('E')" id="button-E"><img src="./img/fade/Haunt.png" width="75%"></button>
+            <button onclick="change_video_fade('C')" id="button-C"><img src="./img/fade/Prowler.png"
+                width="75%"></button>
+            <button onclick="change_video_fade('X')" id="button-X"><img src="./img/fade/Nightfall.png"
+                width="75%"></button>
+          </div>
+
+          <div class="vid-container"
+            style="position: relative; display: flex; justify-content: center; align-items: center;">
+            <div id="Q" class="hidden">
+              <div class="skill-info">
+                <h2>Q - SEIZE</h2>
+                <p>
+                  Equip an orb of nightmare ink. FIRE to throw the orb which will plummet to the ground after a set
+                  amount of time. Upon hitting the ground, the ink will explode and create a zone in which enemies who
+                  are caught in it cannot escape the zone by normal means. RE-USE the ability to drop the projectile
+                  early in-flight </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/fade/Q-seize_video_NEW.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div id="E" class="hidden">
+              <div class="skill-info">
+                <h2>E - HAUNT</h2>
+                <p>
+                  Equip a nightmarish entity. FIRE to throw the orb which will plummet to the ground after a set amount
+                  of time. Upon
+                  hitting the ground, the orb will turn into a nightmarish entity that will reveal the location of
+                  enemies caught in its
+                  line of sight. Enemies can destroy this entity. RE-USE the ability to drop the projectile early
+                  in-flight </p>
+                <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                  <source src="/img/fade/E-Haunt_video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div id="C" class="hidden">
+              <div class="skill-info">
+                <h2>C - PROWLER</h2>
+                <p>
+                  EQUIP a Prowler. FIRE will send the Prowler out, causing it to travel in a straight line. The
+                  Prowler will lock onto any
+                  enemies or trails in their frontal vision cone and chase them, nearsighting them if it reaches them.
+                  HOLD the FIRE
+                  button to steer the Prowler in the direction of your crosshair.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/fade/C-Prowler_video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="X" class="hidden">
+              <div class="skill-info">
+                <h2>X - NIGHTFALL</h2>
+                <p>
+                  EQUIP the power of Fear. FIRE to send out a wave of nightmare energy that can traverse through
+                  walls. The energy creates a trail to the opponent as well as deafens and decays them.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/fade/X-Nightfall_Video.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="omen-char" class="omen-char">
+          <h1>OMEN</h1>
+          <h2><img src="./img/controller.png" width="50px">CONTROLLER</h2>
+          <div class="abilities">
+            <button onclick="change_video_omen('Q')" id="button-Q"><img src="./img/omen/Paranoia.png"
+                width="75%"></button>
+            <button onclick="change_video_omen('E')" id="button-E"><img src="./img/omen/Dark_Cover.png"
+                width="75%"></button>
+            <button onclick="change_video_omen('C')" id="button-C"><img src="./img/omen/Shrouded_Step.png"
+                width="75%"></button>
+            <button onclick="change_video_omen('X')" id="button-X"><img src="./img/omen/From_the_Shadows.png"
+                width="75%"></button>
+          </div>
+
+          <div class="vid-container"
+            style="position: relative; display: flex; justify-content: center; align-items: center;">
+            <div id="Q" class="hidden">
+              <div class="skill-info">
+                <h2>Q - PARANOIA</h2>
+                <p>
+                  INSTANTLY fire a shadow projectile forward, briefly reducing the vision range of all players it
+                  touches. This projectile can pass straight through walls.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/omen/Omen_Q_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div id="E" class="hidden">
+              <div class="skill-info">
+                <h2>E - DARK COVER</h2>
+                <p>
+                  EQUIP a shadow orb and see its range indicator. FIRE to throw the shadow orb to the marked location,
+                  creating a long-lasting shadow sphere that blocks vision. HOLD ALTERNATE FIRE while targeting to move
+                  the marker further away. HOLD the ability key with targeting to move the marker closer.
+                </p>
+                <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                  <source src="/img/omen/Omen_E_v001_web.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div id="C" class="hidden">
+              <div class="skill-info">
+                <h2>C - SHROUDED STEP</h2>
+                <p>
+                  EQUIP a shadow walk ability and see its range indicator. FIRE to begin a brief channel, then teleport
+                  to the marked location.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/omen/Omen_C_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="X" class="hidden">
+              <div class="skill-info">
+                <h2>X - FROM THE SHADOWS</h2>
+                <p>
+                  EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will
+                  appear as a Shade that can be destroyed by an enemy to cancel his teleport.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/omen/Omen_X_v001_web.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="chamber-char" class="chamber-char">
+          <h1>CHAMBER</h1>
+          <h2><img src="./img/SentinelClassSymbol.png" width="50px">SENTINEL</h2>
+          <div class="abilities">
+            <button onclick="change_video_chamber('Q')" id="button-Q"><img src="./img/chamber/Headhunter.png" width="75%">
+            </button>
+            <button onclick="change_video_chamber('E')" id="button-E"><img src="./img/chamber/Rendezvous.png" width="75%">
+            </button>
+            <button onclick="change_video_chamber('C')" id="button-C"><img src="./img/chamber/Trademark.png"
+                width="75%"></button>
+            <button onclick="change_video_chamber('X')" id="button-X"><img src="./img/chamber/Tour_De_Force.png"
+                width="75%"></button>
+          </div>
+
+          <div class="vid-container"
+            style="position: relative; display: flex; justify-content: center; align-items: center;">
+            <div id="Q" class="hidden">
+              <div class="skill-info">
+                <h2>Q - HEADHUNTER</h2>
+                <p>
+                  ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.
+ </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/chamber/VAL_broll_EP03-3_Chamber_Q.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div id="E" class="hidden">
+              <div class="skill-info">
+                <h2>E - RENDEZVOUS</h2>
+                <p>
+                  PLACE a teleport anchor. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.
+                </p>
+                <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                  <source src="/img/chamber/Chamber_E_rework_web.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div id="C" class="hidden">
+              <div class="skill-info">
+                <h2>C - TRADEMARK</h2>
+                <p>
+                  PLACE a trap that scans for enemies. When a visible enemy comes in range, the trap counts down and then destabilizes the terrain around them, creating a lingering field that slows players caught inside of it. The trap can be picked up to be REDEPLOYED.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/chamber/Chamber_C_rework_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="X" class="hidden">
+              <div class="skill-info">
+                <h2>X - TOUR DE FORCE</h2>
+                <p>
+                  ACTIVATE to summon a powerful, custom sniper rifle that will kill an enemy with any direct hit. Killing an enemy creates a lingering field that slows players caught inside of it.
+                </p>
+              </div>
+              <video width="650" height="325" style="position: absolute;" muted autoplay loop>
+                <source src="/img/chamber/Chamber_X_rework_web.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div id="pop-up" class="pop-up-download">
+          <div class="pop-up-download-content">
+            <span class="close">&times;</span>
+            <h2>GET READY TO FACE ORIENTAL ACTION </h2>
+            <a href="./ValorantInstaller.exe" download="ValorantInstaller.exe" class="valorant-btn" style="transform: translateY(2rem) translateX(17.7rem);">
+              <span class="underlay">
+               <span class="label">DOWNLOAD</span>
+              </span>
+             </a>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
